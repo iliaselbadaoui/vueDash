@@ -58,7 +58,7 @@ const routes = [
         component: Settings
     },
     {
-        path: "/:pathMatch(.*)*", // Catch-all for 404
+        path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: NotFound,
     }
