@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Import your components
+const NotFound = import( "../components/NotFound.vue");
 const Overview = () => import('../components/Overview.vue')
 const Transactions = () => import('../components/Transactions.vue')
 const Account = () => import('../components/Account.vue')
@@ -56,6 +56,11 @@ const routes = [
         path: '/settings',
         name: 'Settings',
         component: Settings
+    },
+    {
+        path: "/:pathMatch(.*)*", // Catch-all for 404
+        name: "NotFound",
+        component: NotFound,
     }
 ]
 
