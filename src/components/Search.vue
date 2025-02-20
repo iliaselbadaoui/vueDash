@@ -36,6 +36,7 @@
 .form-control::placeholder {
   color: #718EBF;
 }
+
 .search-input {
   grid-area: 1 / 2 / 2 / 6;
   background-color: transparent;

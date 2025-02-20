@@ -7,12 +7,12 @@ const props = defineProps<{id: string}>();
 onMounted(() => {
   let options = {
     chart: {
-      type: "bar",
+      type: "area",
       height: '360px',
       borderRadius: 30
     },
     legend: {
-      show: true,
+      show: false,
       position: 'top'
     },
     plotOptions: {
@@ -25,14 +25,9 @@ onMounted(() => {
     },
     series: [
       {
-        name: "Withdraw",
-        data: [400, 393.01, 302.94, 278.63, 217.55, 461.87, 511],
-        color: "#FF82AC"
-      },
-      {
-        name: "Deposit",
+        name: "Balance",
         data: [680, 900, 140, 500, 50, 267.98, 200],
-        color: "#16DBCC"
+        color: "#1814F3"
       }
     ],
     xaxis: {

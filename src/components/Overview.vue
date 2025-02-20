@@ -4,6 +4,8 @@ import RecentTransactions from "./RecentTransactions.vue";
 import type { Owner } from '../types/Types.ts'
 import BarChart from "./BarChart.vue";
 import PolarChart from "./PolarChart.vue";
+import AreaChart from "./AreaChart.vue";
+import QuickTransfer from "./QuickTransfer.vue";
 
 const owner : Owner = {
   name: "Jhon Doe",
@@ -34,10 +36,12 @@ const owner : Owner = {
       <PolarChart id="expenses"></PolarChart>
     </div>
     <div class="balance">
-      <span class="big-title lato-bold">Expense Statistics</span>
+      <span class="big-title lato-bold">Quick Transfer</span>
+      <QuickTransfer></QuickTransfer>
     </div>
     <div class="quick">
-      <span class="big-title lato-bold">Expense Statistics</span>
+      <span class="big-title lato-bold">Balance History</span>
+      <AreaChart id="balance-history"></AreaChart>
     </div>
   </div>
 </template>
